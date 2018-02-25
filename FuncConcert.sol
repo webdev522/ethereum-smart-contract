@@ -14,7 +14,7 @@ contract FuncConcert {
     
     function () payable public {buyTickets();}
     
-    function buyTickets()  {
+    function buyTickets() {
         
         require(msg.value != 0);
         uint amount = msg.value / price;
